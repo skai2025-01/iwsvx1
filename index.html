@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News & Updates | iWantSeats</title>
+    <meta name="description" content="Stay updated with the latest news, route announcements, and travel tips from iWantSeats and our partners.">
+    <link rel="canonical" href="https://www.iwantseats.com/news.html"/>
+    <!-- Include your existing CSS links here -->
+    <link rel="stylesheet" href="https://www.iwantseats.com/assets/bootstrap/css/bootstrap.min.css" />
+    <link href="https://www.iwantseats.com/assets/css/style.css" rel="stylesheet"/>
+    <!-- Add any specific news page CSS if needed -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        main.container {
+            padding-top: 100px; /* Increased padding-top for more space */
+            max-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .news-list {
+            margin-top: 20px;
+        }
+        .news-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .news-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .news-item h2 {
+            font-size: 1.8em; /* Relative to body font size */
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        .news-item h2 a {
+            color: #69b946; /* Changed to match footer background color */
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .news-item h2 a:hover {
+            color: #5a9c3d; /* Darker shade of green on hover */
+        }
+        .news-item p {
+            font-size: 1em; /* Relative to body font size */
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .news-item p.published-date {
+            font-size: 0.85em; /* Smaller for date */
+            color: #888;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+        .btn-outline-primary {
+            color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-outline-primary:hover {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        /* Load More Button Styling */
+        .load-more-container {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .load-more-btn {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            background-color: #69b946; /* Match footer green */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .load-more-btn:hover {
+            background-color: #5a9c3d; /* Darker green on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .load-more-btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+            box-shadow: none;
+            transform: none;
+        }
+
+        /* Styles for the modern footer, copied from your article template */
+        .modern-footer {
+            background: #69b946; /* The green color */
+            color: #fff; /* Light text color for better contrast */
+            padding: 30px 15px; /* Reduced padding */
+            font-size: 0.9em; /* Base font size for footer text, 0.9 * 16px = 14.4px */
+            border-top: 5px solid #ffc107; /* Accent border */
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+        }
+
+        .modern-footer .footer-content {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            justify-content: space-between; /* Adjusted to space-between for tighter columns */
+            max-width: 1000px; /* Slightly reduced max-width for content */
+            margin: 0 auto;
+            gap: 20px; /* Reduced gap between columns */
+        }
+
+        .modern-footer .footer-section {
+            flex: 1; /* Distribute space equally */
+            min-width: 180px; /* Slightly reduced min-width */
+            margin-bottom: 15px; /* Reduced space below sections on smaller screens */
+        }
+
+        .modern-footer .footer-section h4 {
+            color: #333333; /* Dark gray */
+            font-size: 1.2em; /* 1.2 * 14.4px = ~17.28px */
+            font-weight: bold; /* Reverted to bold */
+            margin-bottom: 12px; /* Reduced margin */
+            border-bottom: 2px solid rgba(51, 51, 51, 0.3); /* Subtle underline, adjusted for dark gray */
+            padding-bottom: 4px; /* Reduced padding */
+            transition: color 0.3s ease; /* Smooth transition for hover */
+        }
+        .modern-footer .footer-section h4:hover {
+            color: #555555; /* Lighter gray on hover */
+        }
+
+
+        .modern-footer .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .modern-footer .footer-section ul li {
+            margin-bottom: 6px; /* Reduced margin */
+        }
+
+        .modern-footer .footer-section ul li a {
+            color: #fff; /* White for better contrast */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 1em; /* Set to 1em relative to footer base (14.4px) */
+            font-weight: normal; /* Set to normal font weight */
+        }
+
+        .modern-footer .footer-section ul li a:hover {
+            color: #ffc107; /* Accent yellow on hover */
+        }
+
+        .modern-footer .contact-info p {
+            font-size: 1em; /* Explicitly set to 1em relative to footer base (14.4px) */
+            color: #fff; /* White for better contrast */
+            margin-bottom: 6px; /* Reduced spacing */
+            font-weight: normal; /* Set to normal font weight */
+        }
+
+        .modern-footer .contact-info p a {
+            color: #fff; /* Ensure links within contact info are white */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: normal; /* Set to normal font weight */
+        }
+
+        .modern-footer .contact-info p a:hover {
+            color: #ffc107; /* Accent yellow on hover */
+        }
+
+        .modern-footer .footer-bottom {
+            text-align: center;
+            margin-top: 25px; /* Reduced margin */
+            padding-top: 15px; /* Reduced padding */
+            border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle separator, now white */
+        }
+
+        .modern-footer .footer-bottom p {
+            font-size: 0.75em; /* 0.75 * 16px = 12px */
+            color: rgba(255, 255, 255, 0.7); /* Lighter white for copyright text */
+            margin: 0;
+            font-weight: normal; /* Set to normal font weight */
+        }
+
+        .modern-footer .footer-bottom .privacy-links a {
+            color: rgba(255, 255, 255, 0.7); /* Lighter white for privacy links */
+            text-decoration: none;
+            margin: 0 8px; /* Reduced margin */
+            transition: color 0.3s ease;
+            font-weight: normal; /* Set to normal font weight */
+        }
+        .modern-footer .footer-bottom .privacy-links a:hover {
+            color: #ffc107;
+        }
+
+        @media (max-width: 768px) {
+            main.container {
+                padding-top: 90px; /* Adjusted for smaller screens */
+            }
+            .modern-footer .footer-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .modern-footer .footer-section {
+                min-width: unset;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .modern-footer .footer-section:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main.container {
+                padding-top: 80px; /* Adjusted for mobile screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER - Copied from your existing template -->
+    <header role="banner">
+        <div class="container-max">
+            <div class="logo" onclick="window.open('https://www.iwantseats.com/', '_self')">
+                <img alt="IWantSeats Logo" src="https://www.iwantseats.com/assets/images/logo-black.png" />
+            </div>
+            <div class="links" role="navigation">
+                <a href="https://www.iwantseats.com/" onclick="menu()">Home</a>
+                <a href="https://www.iwantseats.com/#about" onclick="menu()">About</a>
+                <a href="https://www.iwantseats.com/news.html" onclick="menu()">News</a>
+                <a href="https://www.iwantseats.com/#contact" onclick="menu()">Contact us</a>
+                <div class="status"></div>
+            </div>
+        </div>
+    </header>
+
+    <main role="main" class="container">
+        <h1 style="text-align: center; margin-bottom: 30px;">Latest News & Updates</h1>
+
+        <div class="news-list" id="newsList">
+            <!-- Example News Article Listing 1 (linking to the article we've been working on) -->
+            <div class="news-item">
+                <h2><a href="[FULL URL OF THIS ARTICLE PAGE]" target="_self">Genesis Transport New Routes: Baler, Baguio, Balanga, Clark Airport P2P</a></h2>
+                <p>Discover Genesis Transport and JoyBus's exciting new routes now available for booking on iWantSeats. Find schedules & fares for Baler-Baguio, Baguio-Balanga, and Trinoma-Clark Airport P2P services.</p>
+                <p class="published-date">Published: July 2, 2025</p>
+                <a href="[FULL URL OF THIS ARTICLE PAGE]" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 2 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Upcoming Promotions for Holiday Travel</a></h2>
+                <p>Get ready for your holiday trips with amazing discounts and special offers on popular routes. Stay tuned for more details!</p>
+                <p class="published-date">Published: June 25, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 3 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Tips for a Smooth Bus Trip Experience</a></h2>
+                <p>From packing essentials to navigating terminals, get expert tips to make your next bus journey comfortable and stress-free.</p>
+                <p class="published-date">Published: June 18, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 4 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Expanded Destinations: Continue Exploring with Genesis Transport</a></h2>
+                <p>We're excited to highlight our long-standing partnership with Genesis Transport, bringing you even more travel options across the Philippines.</p>
+                <p class="published-date">Published: June 10, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 5 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Summer Travel Guide: Top Destinations and Booking Tips</a></h2>
+                <p>Planning your summer getaway? Check out our comprehensive guide to the hottest destinations and how to book your trips seamlessly.</p>
+                <p class="published-date">Published: May 30, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 6 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Customer Spotlight: Your Stories, Our Journey</a></h2>
+                <p>Read inspiring travel stories from our valued customers and share your own unforgettable bus trip experiences.</p>
+                <p class="published-date">Published: May 22, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 7 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Ensuring Seamless Bookings: Our Platform Maintenance & Features</a></h2>
+                <p>Discover how iWantSeats continuously maintains and improves its online platform to provide you with a reliable, secure, and convenient bus ticket booking experience, including new features for faster checkout and easier management.</p>
+                <p class="published-date">Published: May 15, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 8 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Eco-Friendly Travel: Our Commitment to Sustainability</a></h2>
+                <p>Discover how iWantSeats and our partners are working towards more sustainable and environmentally friendly travel options.</p>
+                <p class="published-date">Published: May 7, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 9 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">New Features on iWantSeats: Easier Booking, Faster Checkout!</a></h2>
+                <p>We've rolled out exciting new features on our platform to make your online booking experience even more seamless and efficient.</p>
+                <p class="published-date">Published: April 29, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 10 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Travel Advisory: Navigating Peak Season Bus Travel</a></h2>
+                <p>Essential tips and advisories for traveling during peak seasons to ensure a smooth and enjoyable journey.</p>
+                <p class="published-date">Published: April 20, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 11 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Destination Spotlight: Exploring the Wonders of Bicol</a></h2>
+                <p>Discover the rich culture, stunning landscapes, and delicious cuisine of the Bicol region, now more accessible than ever.</p>
+                <p class="published-date">Published: April 12, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 12 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Partnership with Local Tourism Boards</a></h2>
+                <p>iWantSeats is collaborating with local tourism boards to promote regional attractions and make travel planning easier.</p>
+                <p class="published-date">Published: April 5, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 13 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Understanding Bus Ticket Classes: Economy vs. Executive</a></h2>
+                <p>A detailed guide to the different bus ticket classes available, helping you choose the best option for your travel needs.</p>
+                <p class="published-date">Published: March 28, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 14 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Behind the Scenes: How iWantSeats Works to Serve You</a></h2>
+                <p>Get a glimpse into the technology and people that power iWantSeats, making your online bus booking experience seamless.</p>
+                <p class="published-date">Published: March 20, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 15 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Celebrating 5 Years of Connecting Travelers!</a></h2>
+                <p>Join us in celebrating five years of providing convenient and reliable bus ticket booking services across the Philippines.</p>
+                <p class="published-date">Published: March 12, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 16 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Guide to Exploring Northern Luzon by Bus</a></h2>
+                <p>A comprehensive guide to popular destinations and essential tips for bus travel in the scenic Northern Luzon region.</p>
+                <p class="published-date">Published: March 5, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 17 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Safety First: Our Commitment to Passenger Well-being</a></h2>
+                <p>Learn about the stringent safety measures implemented by our partner bus operators to ensure your peace of mind during travel.</p>
+                <p class="published-date">Published: February 26, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 18 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">How to Change or Cancel Your Bus Ticket Online</a></h2>
+                <p>A step-by-step guide on managing your bus bookings, including how to easily change or cancel your tickets through iWantSeats.</p>
+                <p class="published-date">Published: February 18, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 19 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">Discovering the Hidden Gems of Southern Luzon</a></h2>
+                <p>Uncover lesser-known but equally captivating destinations in Southern Luzon, perfect for your next bus adventure.</p>
+                <p class="published-date">Published: February 10, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Example News Article Listing 20 -->
+            <div class="news-item">
+                <h2><a href="https://www.iwantseats.com/" target="_self">iWantSeats Mobile App: Book On-the-Go!</a></h2>
+                <p>Announcing our new mobile application, designed for even faster and more convenient bus ticket booking from your smartphone.</p>
+                <p class="published-date">Published: February 2, 2025</p>
+                <a href="https://www.iwantseats.com/" target="_self" class="btn btn-sm btn-outline-primary">Read More</a>
+            </div>
+
+            <!-- Add more news items as needed, they will be hidden until 'Load More' is clicked -->
+
+        </div>
+
+        <div class="load-more-container">
+            <button id="loadMoreBtn" class="load-more-btn">Load More Articles</button>
+        </div>
+    </main>
+
+    <!-- FOOTER - Copied from your existing template -->
+    <footer class="modern-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://www.iwantseats.com/">Home</a></li>
+                    <li><a href="https://www.iwantseats.com/">About Us</a></li>
+                    <li><a href="https://www.iwantseats.com/">News</a></li>
+                    <li><a href="https://www.iwantseats.com/">Contact Us</a></li>
+                    <li><a href="https://www.iwantseats.com/">Book Tickets</a></li>
+                    <li><a href="https://www.iwantseats.com/">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Popular Routes</h4>
+                <ul>
+                    <li><a href="https://www.iwantseats.com/">Manila to Baguio</a></li>
+                    <li><a href="https://www.iwantseats.com/">Baguio to Manila</a></li>
+                    <li><a href="https://www.iwantseats.com/">Manila to Baler</a></li>
+                    <li><a href="https://www.iwantseats.com/">Clark to Trinoma</a></li>
+                    <li><a href="https://www.iwantseats.com/">Baguio to Balanga</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@iwantseats.com">info@iwantseats.com</a></p>
+                <p>Phone: +63 912 345 6789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 - iWantSeats v10.1. All rights reserved.</p>
+            <div class="privacy-links">
+                <a href="https://www.iwantseats.com/" data-bs-toggle="modal" data-bs-target="#modal-terms">Terms and Conditions</a>
+                <a href="https://www.iwantseats.com/" data-bs-toggle="modal" data-bs-target="#modal-policy">Privacy policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DIALOGS - Copied from your existing template -->
+    <div id="modal-policy" class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-3">
+                    <h3 class="modal-title">Privacy Policy</h3>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div w3-include-html="https://www.iwantseats.com/policy.html"></div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center p-3">
+                    <button class="btn btn-light fs-4" type="button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-terms" class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-4">
+                    <h3 class="modal-title">Terms and Conditions</h3>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div w3-include-html="https://www.iwantseats.com/terms.html"></div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center p-3">
+                    <button class="btn btn-light fs-4" type="button" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Script Links - Copied from your existing template -->
+    <script rel="script" src="https://www.iwantseats.com/assets/js/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js"></script>
+    <script src="https://www.iwantseats.com/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script rel="script" src="https://www.iwantseats.com/assets/js/moment.min.js"></script>
+    <script rel="script" src="https://www.iwantseats.com/assets/js/axios.min.js"></script>
+    <script rel="script" src="https://www.iwantseats.com/assets/js/lodash.min.js"></script>
+    <script rel="script" src="https://www.iwantseats.com/assets/swal/sweetalert2.min.js"></script>
+    <script rel="script" src="https://www.iwantseats.com/assets/js/loadingoverlay.min.js"></script>
+    <script async rel="script" src="https://www.iwantseats.com/assets/js/app.js?v=1679063936161"></script>
+    <script async rel="script" src="https://www.iwantseats.com/assets/js/main.js?v=1679063936161"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsItems = document.querySelectorAll('.news-item');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const itemsPerPage = 10;
+            let currentItems = 0;
+
+            function showNextItems() {
+                // Hide all items first to ensure correct display of the next batch
+                newsItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+
+                // Show items from the beginning up to the currentItems count
+                for (let i = 0; i < currentItems + itemsPerPage && i < newsItems.length; i++) {
+                    newsItems[i].style.display = 'block';
+                }
+                currentItems += itemsPerPage;
+
+                // Hide load more button if all items are shown
+                if (currentItems >= newsItems.length) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            }
+
+            // Initial load
+            showNextItems();
+
+            // Event listener for the Load More button
+            loadMoreBtn.addEventListener('click', showNextItems);
+        });
+    </script>
+</body>
+</html>
