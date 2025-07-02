@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <!-- SEO Meta Tags (VERY IMPORTANT for your articles) -->
+    <title>Genesis Transport New Routes: Baler, Baguio, Balanga, Clark Airport P2P | IWantSeats</title>
+    <meta name="description" content="Discover Genesis Transport and JoyBus's new routes. Find schedules & fares for Baler-Baguio, Baguio-Balanga, and Trinoma-Clark Airport P2P services. Book your tickets easily with iWantSeats."/>
+    <meta name="keywords" content="Genesis Transport new routes, JoyBus schedules, Baler to Baguio, Baguio to Baler, Baguio to Balanga, Trinoma to Clark Airport, Clark Airport to Trinoma, bus fares, online bus booking, iWantSeats"/>
+    <link rel="canonical" href="[FULL URL OF THIS ARTICLE PAGE, e.g., https://www.iwantseats.com/articles/genesis-new-routes.html]"/>
+    <meta name="robots" content="index, follow"/> <!-- Standard SEO directive to index and follow links -->
+
+    <!-- Open Graph / Social Media Meta Tags (for better sharing on Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Genesis Transport New Routes: Baler, Baguio, Balanga, Clark Airport P2P"/>
+    <meta property="og:description" content="Discover Genesis Transport and JoyBus's exciting new routes! Find schedules & fares for Baler-Baguio, Baguio-Balanga, and Trinoma-Clark Airport P2P services. Book your tickets easily with IWantSeats."/>
+    <meta property="og:image" content="https://www.iwantseats.com/assets/images/genesis-new-routes-thumbnail.jpg"/> <!-- Placeholder: Suggest an image relevant to new routes -->
+    <meta property="og:url" content="[FULL URL OF THIS ARTICLE PAGE]"/>
+    <meta property="og:type" content="article"/> <!-- Important for blog posts -->
+    <meta property="og:site_name" content="iWantSeats"/>
+
+    <!-- Twitter Card Meta Tags (for better sharing on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Genesis Transport New Routes: Baler, Baguio, Balanga, Clark Airport P2P"/>
+    <meta name="twitter:description" content="Discover Genesis Transport and JoyBus's exciting new routes! Find schedules & fares for Baler-Baguio, Baguio-Balanga, and Trinoma-Clark Airport P2P services. Book your tickets easily with IWantSeats."/>
+    <meta name="twitter:image" content="https://www.iwantseats.com/assets/images/genesis-new-routes-thumbnail.jpg"/> <!-- Placeholder: Suggest an image relevant to new routes -->
+    <meta name="twitter:site" content="@iwantseats_twitter_handle"/> <!-- If you have one -->
+
+    <!-- Original Site Favicons - Changed to absolute URLs -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.iwantseats.com/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.iwantseats.com/assets/img/favicon-16x16.png?v=100"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.iwantseats.com/assets/img/favicon-32x32.png?v=100"/>
+    <link rel="manifest" href="https://www.iwantseats.com/site.webmanifest">
+    <link href="https://www.iwantseats.com/assets/images/logo.png" rel="icon" sizes="185x191" type="image/png">
+    <link rel="shortcut icon" href="https://www.iwantseats.com/assets/img/favicon.ico"/> <!-- Added for broader favicon support -->
+
+    <!-- JSON-LD Structured Data for Article (IMPORTANT for SEO - Fill this for each article) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Genesis Transport New Routes: Baler, Baguio, Balanga, Clark Airport P2P",
+      "image": [
+        "https://www.iwantseats.com/assets/images/genesis-new-routes-thumbnail.jpg" /* Replace with actual article hero image URL */
+      ],
+      "datePublished": "2025-07-02T12:00:00+08:00", /* Replace with actual publication date and time (ISO 8601 format) */
+      "dateModified": "2025-07-02T12:00:00+08:00", /* Replace with actual last modified date and time */
+      "author": {
+        "@type": "Organization", /* Or "Person" if a specific author */
+        "name": "IWantSeats" /* Replace with author's name or your organization's name */
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IWantSeats",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.iwantseats.com/assets/images/logo-black.png" /* Your website's logo URL */
+        }
+      },
+      "description": "Discover Genesis Transport and JoyBus's exciting new routes! Find schedules & fares for Baler-Baguio, Baguio-Balanga, and Trinoma-Clark Airport P2P services. Book your tickets easily with IWantSeats." /* Same as meta description */
+    }
+    </script>
+
+    <!-- Link CSS - Changed to absolute URLs for preview -->
+    <link rel="stylesheet" href="https://www.iwantseats.com/assets/bootstrap/css/bootstrap.min.css" />
+    <link href="https://www.iwantseats.com/assets/css/style.css" rel="stylesheet"/>
+    <link href="https://www.iwantseats.com/assets/css/style.css?v=1679063936161" rel="stylesheet" />
+    <link href="https://www.iwantseats.com/assets/css/oparator.min.css" rel="stylesheet"/>
+    <link href="https://www.iwantseats.com/assets/css/table.min.css" rel="stylesheet"/>
+    <link href="https://www.iwantseats.com/assets/swal/sweetalert2.min.css" rel="stylesheet" />
+    <link href="https://www.iwantseats.com/assets/fonts/fontawesome-all.min.css" rel="stylesheet" />
+
+    <!-- Custom Styling for Article Page Responsiveness, Spacing, and Font Sizes -->
+    <style>
+        /* Base font size for better readability */
+        body {
+            font-family: Arial, sans-serif; /* Fallback font */
+            font-size: 16px; /* Standard base font size for the document */
+        }
+        main {
+            padding-top: 80px; /* Increased top padding to prevent content from being hidden by fixed header */
+        }
+        main .container {
+            padding: 20px; /* Default padding for all sides */
+            max-width: 960px; /* Max width for content on large screens */
+            margin-left: auto;
+            margin-right: auto; /* Center the container */
+        }
+
+        /* Adjust padding for smaller screens */
+        @media (max-width: 768px) {
+            main {
+                padding-top: 70px; /* Adjust top padding for tablets */
+            }
+            main .container {
+                padding: 15px; /* Slightly less padding on tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding-top: 60px; /* Adjust top padding for mobile phones */
+            }
+            main .container {
+                padding: 10px; /* Even less padding on mobile phones */
+            }
+        }
+
+        /* Ensure images within the article are responsive */
+        main img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Remove extra space below images */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Basic styling for headings and paragraphs for readability */
+        main h1 {
+            font-size: 2.5em; /* 2.5 * 16px = 40px */
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            line-height: 1.2;
+        }
+        main h2 {
+            font-size: 2em; /* 2 * 16px = 32px */
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            line-height: 1.2;
+        }
+        main h3 {
+            font-size: 1.5em; /* 1.5 * 16px = 24px */
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            line-height: 1.2;
+        }
+        main p {
+            font-size: 1em; /* 1 * 16px = 16px */
+            margin-bottom: 1em;
+            line-height: 1.6;
+            font-weight: normal; /* Ensure paragraphs are normal weight */
+        }
+
+        /* Styling for lists within the main content, specifically schedules */
+        main ul {
+            margin-bottom: 1em;
+            padding-left: 25px; /* Consistent padding for lists */
+        }
+
+        main ul li {
+            font-size: 1em; /* 1 * 16px = 16px */
+            margin-bottom: 0.3em; /* Reduced bottom margin for tighter spacing */
+            line-height: 1.4; /* Adjusted line height for compactness */
+            font-weight: normal; /* Ensure list items are normal weight */
+        }
+
+        /* Specific styling for route details for better readability */
+        main ul li strong {
+            font-size: 1.0em; /* 1.0 * 16px = 16px (same as list item for uniformity) */
+            font-weight: normal; /* Ensure strong text within list items is normal weight */
+        }
+
+        /* Styling for the "Book Your Tickets Now!" button */
+        main .btn-primary {
+            padding: 18px 35px; /* Increased padding for a larger button */
+            font-size: 1.125em; /* 1.125 * 16px = 18px */
+            min-width: 280px; /* Ensure a minimum width for prominence */
+            border-radius: 5px; /* Maintain rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add a subtle shadow */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+        }
+
+        main .btn-primary:hover {
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
+        }
+
+        /* Disclaimer text styling */
+        .disclaimer p {
+            font-size: 0.75em; /* 0.75 * 16px = 12px */
+            color: #555;
+        }
+
+        /* --- MODERN FOOTER STYLING --- */
+        .modern-footer {
+            background: #69b946; /* The green color */
+            color: #fff; /* Light text color for better contrast */
+            padding: 30px 15px; /* Reduced padding */
+            font-size: 0.9em; /* Base font size for footer text, 0.9 * 16px = 14.4px */
+            border-top: 5px solid #ffc107; /* Accent border */
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+        }
+
+        .modern-footer .footer-content {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            justify-content: space-between; /* Adjusted to space-between for tighter columns */
+            max-width: 1000px; /* Slightly reduced max-width for content */
+            margin: 0 auto;
+            gap: 20px; /* Reduced gap between columns */
+        }
+
+        .modern-footer .footer-section {
+            flex: 1; /* Distribute space equally */
+            min-width: 180px; /* Slightly reduced min-width */
+            margin-bottom: 15px; /* Reduced space below sections on smaller screens */
+        }
+
+        .modern-footer .footer-section h4 {
+            color: #333333; /* Dark gray */
+            font-size: 1.2em; /* 1.2 * 14.4px = ~17.28px */
+            font-weight: bold; /* Reverted to bold */
+            margin-bottom: 12px; /* Reduced margin */
+            border-bottom: 2px solid rgba(51, 51, 51, 0.3); /* Subtle underline, adjusted for dark gray */
+            padding-bottom: 4px; /* Reduced padding */
+            transition: color 0.3s ease; /* Smooth transition for hover */
+        }
+        .modern-footer .footer-section h4:hover {
+            color: #555555; /* Lighter gray on hover */
+        }
+
+
+        .modern-footer .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .modern-footer .footer-section ul li {
+            margin-bottom: 6px; /* Reduced margin */
+        }
+
+        .modern-footer .footer-section ul li a {
+            color: #fff; /* White for better contrast */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 1em; /* Set to 1em relative to footer base (14.4px) */
+            font-weight: normal; /* Set to normal font weight */
+        }
+
+        .modern-footer .footer-section ul li a:hover {
+            color: #ffc107; /* Accent yellow on hover */
+        }
+
+        .modern-footer .contact-info p {
+            font-size: 1em; /* Explicitly set to 1em relative to footer base (14.4px) */
+            color: #fff; /* White for better contrast */
+            margin-bottom: 6px; /* Reduced spacing */
+            font-weight: normal; /* Set to normal font weight */
+        }
+
+        .modern-footer .contact-info p a {
+            color: #fff; /* Ensure links within contact info are white */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: normal; /* Set to normal font weight */
+        }
+
+        .modern-footer .contact-info p a:hover {
+            color: #ffc107; /* Accent yellow on hover */
+        }
+
+        /* Social icons removed */
+
+        .modern-footer .footer-bottom {
+            text-align: center;
+            margin-top: 25px; /* Reduced margin */
+            padding-top: 15px; /* Reduced padding */
+            border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle separator, now white */
+        }
+
+        .modern-footer .footer-bottom p {
+            font-size: 0.75em; /* 0.75 * 16px = 12px */
+            color: rgba(255, 255, 255, 0.7); /* Lighter white for copyright text */
+            margin: 0;
+            font-weight: normal; /* Set to normal font weight */
+        }
+
+        .modern-footer .footer-bottom .privacy-links a {
+            color: rgba(255, 255, 255, 0.7); /* Lighter white for privacy links */
+            text-decoration: none;
+            margin: 0 8px; /* Reduced margin */
+            transition: color 0.3s ease;
+            font-weight: normal; /* Set to normal font weight */
+        }
+        .modern-footer .footer-bottom .privacy-links a:hover {
+            color: #ffc107;
+        }
+
+
+        /* Responsive adjustments for footer */
+        @media (max-width: 768px) {
+            .modern-footer .footer-content {
+                flex-direction: column; /* Stack columns vertically */
+                align-items: center;
+                text-align: center;
+            }
+            .modern-footer .footer-section {
+                min-width: unset; /* Remove min-width for stacking */
+                width: 100%; /* Take full width */
+                margin-bottom: 20px; /* Adjusted margin */
+            }
+            .modern-footer .footer-section:last-child {
+                margin-bottom: 0;
+            }
+            /* Social icons removed, so no need for this adjustment */
+        }
+    </style>
+
+    <!-- Google Analytics (Keep this for tracking) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEFYCVD5R7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZEFYCVD5R7');
+    </script>
+</head>
+<body>
+    <!-- HEADER - Keep this exactly as is -->
+    <header role="banner">
+        <div class="container-max">
+            <div class="logo" onclick="window.open('https://www.iwantseats.com/', '_self')">
+                <img alt="IWantSeats Logo" src="https://www.iwantseats.com/assets/images/logo-black.png" />
+            </div>
+            <div class="links" role="navigation">
+                <a href="https://www.iwantseats.com/" onclick="menu()">Home</a>
+                <a href="https://www.iwantseats.com/#about" onclick="menu()">About</a>
+                <a href="https://www.iwantseats.com/news.html" onclick="menu()">News</a> <!-- Added News link -->
+                <a href="https://www.iwantseats.com/#contact" onclick="menu()">Contact us</a>
+                <div class="status"></div>
+            </div>
+            <div class="menu" onclick="menu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA FOR YOUR ARTICLE -->
+    <main role="main">
+        <section class="sp">
+            <div class="container">
+                <h1 style="text-align: center; margin-bottom: 20px;">Introducing Genesis Transport's Exciting New Routes!</h1>
+
+                <!-- Header Image Segment -->
+                <div style="margin-bottom: 30px; text-align: center;">
+                    <img src="https://placehold.co/540x540/E0E0E0/333333?text=New+Routes+Header+Image"
+                         alt="Genesis Transport new routes announcement"
+                         width="540" height="540" loading="lazy"
+                         style="width: 100%; max-width: 540px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.9em; color: #666; margin-top: 10px;">Embark on new adventures with Genesis Transport's expanded network.</p>
+                </div>
+                <!-- End Header Image Segment -->
+
+                <!-- START OF ARTICLE CONTENT -->
+                <p>Get ready to explore more of the Philippines! **iWantSeats** is thrilled to announce the availability of several highly anticipated new routes from **Genesis Transport**, including their premium JoyBus services. These expanded connections, provided by Genesis Transport, are designed to offer you even greater convenience, comfort, and direct access to some of the country's most beautiful destinations. Discover the exciting new journeys below, and easily book your tickets online with iWantSeats!</p>
+
+                <h2>Explore Our Latest Route Additions & Schedules</h2>
+
+                <h3>Direct from Baler to Baguio</h3>
+                <p>Experience a seamless and comfortable journey from the surfing paradise of Baler directly to the cool, refreshing mountains of Baguio, the Summer Capital of the Philippines. Enjoy scenic views as you travel with Genesis Transport's reliable service.</p>
+                <ul>
+                    <li>Fare: PHP 950</li>
+                    <li>Schedule: 6:00 AM - JoyBus (Comfort Room available in the middle section)</li>
+                </ul>
+
+                <h3>Seamless Travel from Baguio to Baler</h3>
+                <p>Planning your return trip or heading straight to the coast? Our new Baguio to Baler route offers a convenient and enjoyable ride, connecting you from the highlands to the beautiful beaches.</p>
+                <ul>
+                    <li>Fare: PHP 950</li>
+                    <li>Schedule: 9:00 AM - JoyBus (Comfort Room available in the middle section)</li>
+                </ul>
+
+                <h3>Efficient Connections: Baguio to Balanga</h3>
+                <p>Travel effortlessly from Baguio to Balanga, Bataan, with multiple daily departures designed to fit your schedule. Experience the comfort and reliability of JoyBus Executive service on this popular route.</p>
+                <ul>
+                    <li>Fare: PHP 810</li>
+                    <li>Schedule:
+                        <ul>
+                            <li>10:30 AM</li>
+                            <li>12:30 PM</li>
+                            <li>2:30 PM</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Trinoma - Clark Airport P2P: Your Direct Link to the Airport</h3>
+                <p>Say goodbye to travel stress! Our new Trinoma (Quezon City) to Clark Airport Point-to-Point (P2P) service offers a direct, hassle-free transfer, ensuring you arrive at the airport relaxed and on time for your flight. Enjoy frequent departures throughout the day.</p>
+                <ul>
+                    <li>Schedule:
+                        <ul>
+                            <li>8:00 AM</li>
+                            <li>9:00 AM</li>
+                            <li>10:00 AM</li>
+                            <li>11:00 AM</li>
+                            <li>12:00 PM</li>
+                            <li>1:00 PM</li>
+                            <li>2:00 PM</li>
+                            <li>3:00 PM</li>
+                            <li>4:00 PM</li>
+                            <li>5:00 PM</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Clark Airport - Trinoma P2P: Convenient Return Journeys</h3>
+                <p>After your flight, easily connect from Clark Airport back to Trinoma. Enjoy a comfortable and direct ride home, avoiding the complexities of multiple transfers.</p>
+                <ul>
+                    <li>Schedule:
+                        <ul>
+                            <li>8:00 AM</li>
+                            <li>9:00 AM</li>
+                            <li>10:00 AM</li>
+                            <li>11:00 AM</li>
+                            <li>12:00 PM</li>
+                            <li>1:00 PM</li>
+                            <li>2:00 PM</li>
+                            <li>3:00 PM</li>
+                            <li>4:00 PM</li>
+                            <li>5:00 PM</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>These new routes are a testament to Genesis Transport's commitment to providing enhanced travel options and convenience for our passengers. Whether you're planning a leisurely trip or need a quick airport transfer, these services are designed with your comfort in mind. Don't miss out on exploring these exciting new connections!</p>
+
+                <center style="margin-top: 40px;">
+                    <button class="btn btn-primary" onclick="window.open('https://www.iwantseats.com/booking.html', '_self')">
+                        Book Your Tickets Now!
+                    </button>
+                </center>
+                <!-- END OF ARTICLE CONTENT -->
+
+                <!-- DISCLAIMER -->
+                <div class="disclaimer" style="margin-top: 50px; padding: 20px; background-color: #f8f8f8; border-left: 5px solid #ffc107; border-radius: 5px;">
+                    <p style="margin-bottom: 0;">
+                        <strong>Disclaimer:</strong> All schedules, routes, and fares are subject to change without prior notice. For the most up-to-date and real-time information, please visit the official <a href="https://www.iwantseats.com/" target="_blank" style="color: #007bff; text-decoration: underline;">iwantseats.com</a> website or contact Genesis Transport directly.
+                    </p>
+                </div>
+                <!-- END DISCLAIMER -->
+
+            </div>
+        </section>
+    </main>
+
+    <!-- MODERN FOOTER -->
+    <footer class="modern-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://www.iwantseats.com/">Home</a></li>
+                    <li><a href="https://www.iwantseats.com/">About Us</a></li>
+                    <li><a href="https://www.iwantseats.com/">News</a></li>
+                    <li><a href="https://www.iwantseats.com/">Contact Us</a></li>
+                    <li><a href="https://www.iwantseats.com/">Book Tickets</a></li>
+                    <li><a href="https://www.iwantseats.com/">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Popular Routes</h4>
+                <ul>
+                    <li><a href="https://www.iwantseats.com/">Manila to Baguio</a></li>
+                    <li><a href="https://www.iwantseats.com/">Baguio to Manila</a></li>
+                    <li><a href="https://www.iwantseats.com/">Manila to Baler</a></li>
+                    <li><a href="https://www.iwantseats.com/">Clark to Trinoma</a></li>
+                    <li><a href="https://www.iwantseats.com/">Baguio to Balanga</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@iwantseats.com">info@iwantseats.com</a></p>
+                <p>Phone: +63 912 345 6789</p>
+                <!-- Removed Address line -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 - iWantSeats v10.1. All rights reserved.</p>
+            <div class="privacy-links">
+                <a href="https://www.iwantseats.com/" data-bs-toggle="modal" data-bs-target="#modal-terms">Terms and Conditions</a>
+                <a href="https://www.iwantseats.com/" data-bs-toggle="modal" data-bs-target="#modal-policy">Privacy policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DIALOGS - Keep these exactly as is -->
+    <div id="modal-policy" class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-3">
+                    <h3 class="modal-title">Privacy Policy</h3>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div w3-include-html="https://www.iwantseats.com/policy.html"></div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center p-3">
+                    <button class="btn btn-light fs-4" type="button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-terms" class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-4">
+                    <h3 class="modal-title">Terms and Conditions</h3>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div w3-include-html="https://www.iwantseats.com/terms.html"></div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center p-3">
+                    <button class="btn btn-light fs-4" type="button" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Script Links - Changed to absolute URLs for preview -->
+    <script rel="script" src="https://www.iwantseats.com/assets/js/jquery.min.js"></script>
+    <script src="https://www.iwantseats.com/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script rel="script" src="https://www.iwantseats.com/assets/js/moment.min.js"></script>
+    <script rel="script" src="https://www.iwantseats.com/assets/js/axios.min.js"></script>
+    <script rel="script" src="https://www.iwantseats.com/assets/js/lodash.min.js"></script>
+    <script rel="script" src="https://www.iwantseats.com/assets/swal/sweetalert2.min.js"></script>
+    <script rel="script" src="https://www.iwantseats.com/assets/js/loadingoverlay.min.js"></script>
+    <script async rel="script" src="https://www.iwantseats.com/assets/js/app.js?v=1679063936161"></script>
+    <script async rel="script" src="https://www.iwantseats.com/assets/js/main.js?v=1679063936161"></script>
+</body>
+</html>
