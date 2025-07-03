@@ -7,8 +7,8 @@
 
     <!-- SEO Meta Tags (VERY IMPORTANT for your articles) -->
     <title>Genesis Transport New Routes: Baler, Baguio, Balanga, Clark Airport P2P | IWantSeats</title>
-    <meta name="description" content="Discover Genesis Transport and JoyBus's new routes. Find schedules & fares for Baler-Baguio, Baguio-Balanga, and Trinoma-Clark Airport P2P services. Book your tickets easily with iWantSeats."/>
-    <meta name="keywords" content="Genesis Transport new routes, JoyBus schedules, Baler to Baguio, Baguio to Baler, Baguio to Balanga, Trinoma to Clark Airport, Clark Airport to Trinoma, bus fares, online bus booking, iWantSeats"/>
+    <meta name="description" content="Discover Genesis Transport and JoyBus's exciting new routes! Find schedules & fares for Baler-Baguio, Baguio-Balanga, and Trinoma-Clark Airport P2P services. Book your tickets easily with IWantSeats."/>
+    <meta name="keywords" content="Genesis Transport new routes, JoyBus schedules, Baler to Baguio, Baguio to Baler, Baguio to Balanga, Trinoma Clark Airport P2P, Clark Airport Trinoma P2P, bus fares, online bus booking, IWantSeats"/>
     <link rel="canonical" href="[FULL URL OF THIS ARTICLE PAGE, e.g., https://www.iwantseats.com/articles/genesis-new-routes.html]"/>
     <meta name="robots" content="index, follow"/> <!-- Standard SEO directive to index and follow links -->
 
@@ -18,7 +18,7 @@
     <meta property="og:image" content="https://www.iwantseats.com/assets/images/genesis-new-routes-thumbnail.jpg"/> <!-- Placeholder: Suggest an image relevant to new routes -->
     <meta property="og:url" content="[FULL URL OF THIS ARTICLE PAGE]"/>
     <meta property="og:type" content="article"/> <!-- Important for blog posts -->
-    <meta property="og:site_name" content="iWantSeats"/>
+    <meta property="og:site_name" content="IWantSeats"/>
 
     <!-- Twitter Card Meta Tags (for better sharing on Twitter) -->
     <meta name="twitter:card" content="summary_large_image"/>
@@ -57,8 +57,7 @@
           "@type": "ImageObject",
           "url": "https://www.iwantseats.com/assets/images/logo-black.png" /* Your website's logo URL */
         }
-      },
-      "description": "Discover Genesis Transport and JoyBus's exciting new routes! Find schedules & fares for Baler-Baguio, Baguio-Balanga, and Trinoma-Clark Airport P2P services. Book your tickets easily with IWantSeats." /* Same as meta description */
+      }
     }
     </script>
 
@@ -288,23 +287,128 @@
             color: #ffc107;
         }
 
+        /* --- Header and Mobile Menu Styling --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure header is on top */
+            background-color: #fff; /* Assuming a white header background */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex; /* Use flexbox for header content */
+            justify-content: space-between; /* Space out logo and links */
+            align-items: center;
+            padding: 10px 20px; /* Adjust padding as needed */
+        }
 
-        /* Responsive adjustments for footer */
-        @media (max-width: 768px) {
-            .modern-footer .footer-content {
-                flex-direction: column; /* Stack columns vertically */
-                align-items: center;
-                text-align: center;
+        header .container-max {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px; /* Max width for your header content */
+            margin: 0 auto;
+        }
+
+        header .logo img {
+            height: 40px; /* Adjust logo size */
+            width: auto; /* Ensure aspect ratio is maintained */
+        }
+
+        /* Hide the checkbox visually */
+        .hidden-checkbox {
+            display: none;
+        }
+
+        /* Styling for the hamburger icon (label) */
+        .menu {
+            display: none; /* Hidden by default on desktop */
+            font-size: 1.8em; /* Adjust icon size */
+            cursor: pointer;
+            color: #333; /* Icon color */
+            padding: 5px;
+            z-index: 1001; /* Ensure icon is above menu */
+        }
+
+        /* Default desktop navigation links */
+        header .links {
+            display: flex;
+            gap: 20px; /* Space between desktop links */
+            align-items: center;
+        }
+
+        header .links a {
+            text-decoration: none;
+            color: #333; /* Link color */
+            font-weight: normal; /* Reverted to normal font weight */
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+
+        header .links a:hover {
+            color: #69b946; /* Green on hover */
+        }
+
+        /* Hide the status div on mobile if not needed */
+        header .links .status {
+            display: none; /* Assuming this is not needed in the mobile menu */
+        }
+
+        /* Mobile styles for navigation */
+        @media (max-width: 768px) { /* Adjust breakpoint as needed */
+            .menu {
+                display: block; /* Show hamburger icon on mobile */
             }
-            .modern-footer .footer-section {
-                min-width: unset; /* Remove min-width for stacking */
-                width: 100%; /* Take full width */
-                margin-bottom: 20px; /* Adjusted margin */
+
+            header .links {
+                position: fixed;
+                top: 0; /* Align with header top */
+                right: 0; /* Start off-screen to the right */
+                width: 70%; /* Adjust width of the mobile menu */
+                max-width: 300px; /* Max width for mobile menu */
+                height: 100vh; /* Full viewport height */
+                background-color: #f8f8f8; /* Background for mobile menu */
+                flex-direction: column;
+                justify-content: flex-start; /* Align items to the top */
+                padding-top: 80px; /* Space for header content */
+                box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+                transform: translateX(100%); /* Initially off-screen */
+                transition: transform 0.3s ease-in-out;
+                z-index: 999; /* Below the hamburger icon but above content */
+                overflow-y: auto; /* Enable scrolling for long menus */
+                align-items: flex-start; /* Align links to the left */
+                gap: 10px; /* Space between mobile links */
             }
-            .modern-footer .footer-section:last-child {
-                margin-bottom: 0;
+
+            header .links a {
+                width: 100%;
+                padding: 15px 20px; /* Larger tap area for mobile links */
+                border-bottom: 1px solid #eee; /* Separator for mobile links */
+                text-align: left;
+                color: #333; /* Mobile link color */
+                font-weight: normal; /* Ensure mobile links are also normal weight */
             }
-            /* Social icons removed, so no need for this adjustment */
+
+            header .links a:last-child {
+                border-bottom: none;
+            }
+
+            /* When checkbox is checked, show the menu */
+            #menu-toggle:checked ~ .links {
+                transform: translateX(0); /* Slide in from the right */
+            }
+        }
+
+        /* New style for image caption */
+        .image-caption {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+            max-width: 540px; /* Constrain to image's max-width */
+            margin-left: auto; /* Center the caption */
+            margin-right: auto; /* Center the caption */
+            text-align: center; /* Ensure text inside is centered */
         }
     </style>
 
@@ -324,15 +428,18 @@
             <div class="logo" onclick="window.open('https://www.iwantseats.com/', '_self')">
                 <img alt="IWantSeats Logo" src="https://www.iwantseats.com/assets/images/logo-black.png" />
             </div>
-            <div class="links" role="navigation">
-                <a href="https://www.iwantseats.com/" onclick="menu()">Home</a>
-                <a href="https://www.iwantseats.com/#about" onclick="menu()">About</a>
-                <a href="https://www.iwantseats.com/news.html" onclick="menu()">News</a> <!-- Added News link -->
-                <a href="https://www.iwantseats.com/#contact" onclick="menu()">Contact us</a>
-                <div class="status"></div>
-            </div>
-            <div class="menu" onclick="menu()">
+            <!-- Hidden checkbox for menu toggle -->
+            <input type="checkbox" id="menu-toggle" class="hidden-checkbox">
+            <!-- Label acts as the hamburger icon -->
+            <label for="menu-toggle" class="menu">
                 <i class="fas fa-bars"></i>
+            </label>
+            <div class="links" role="navigation">
+                <a href="https://www.iwantseats.com/">Home</a>
+                <a href="https://www.iwantseats.com/#about">About</a>
+                <a href="https://www.iwantseats.com/news.html">News</a> <!-- Added News link -->
+                <a href="https://www.iwantseats.com/#contact">Contact us</a>
+                <div class="status"></div>
             </div>
         </div>
     </header>
@@ -341,20 +448,20 @@
     <main role="main">
         <section class="sp">
             <div class="container">
-                <h1 style="text-align: center; margin-bottom: 20px;">Introducing Genesis Transport's Exciting New Routes!</h1>
+                <h1 style="text-align: center; margin-bottom: 20px;">Introducing Genesis Transport's Exciting New Routes! Book Online Now!</h1>
 
                 <!-- Header Image Segment -->
                 <div style="margin-bottom: 30px; text-align: center;">
-                    <img src="https://photos.app.goo.gl/HjQGoX84rRTcbKZL7"
+                    <img src="https://placehold.co/540x540/E0E0E0/333333?text=New+Routes+Header+Image"
                          alt="Genesis Transport new routes announcement"
                          width="540" height="540" loading="lazy"
-                         style="width: 100%; max-width: 540px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <p style="font-size: 0.9em; color: #666; margin-top: 10px;">Embark on new adventures with Genesis Transport's expanded network.</p>
+                         style="width: 100%; max-width: 540px; height: auto; border-radius: 8px; box-shadow: 0 44px 8px rgba(0,0,0,0.1);">
+                    <p class="image-caption">Embark on new adventures and book your tickets online today with Genesis Transport's expanded network.</p>
                 </div>
                 <!-- End Header Image Segment -->
 
                 <!-- START OF ARTICLE CONTENT -->
-                <p>Get ready to explore more of the Philippines! **iWantSeats** is thrilled to announce the availability of several highly anticipated new routes from **Genesis Transport**, including their premium JoyBus services. These expanded connections, provided by Genesis Transport, are designed to offer you even greater convenience, comfort, and direct access to some of the country's most beautiful destinations. Discover the exciting new journeys below, and easily book your tickets online with iWantSeats!</p>
+                <p>Get ready to explore more of the Philippines! iWantSeats is thrilled to announce that several highly anticipated new routes from Genesis Transport, including their premium JoyBus services, are now available for convenient online booking directly on our platform. These expanded connections, provided by Genesis Transport, are designed to offer you even greater convenience, comfort, and direct access to some of the country's most beautiful destinations. Discover the exciting new journeys below, and easily book your tickets online with iWantSeats!</p>
 
                 <h2>Explore Our Latest Route Additions & Schedules</h2>
 
@@ -471,8 +578,7 @@
             <div class="footer-section contact-info">
                 <h4>Contact Us</h4>
                 <p>Email: <a href="mailto:info@iwantseats.com">info@iwantseats.com</a></p>
-                <p>Phone: +63 912 345 6789</p>
-                <!-- Removed Address line -->
+                <!-- Removed Phone line -->
             </div>
         </div>
         <div class="footer-bottom">
@@ -520,6 +626,11 @@
 
     <!-- Script Links - Changed to absolute URLs for preview -->
     <script rel="script" src="https://www.iwantseats.com/assets/js/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js"></script>
     <script src="https://www.iwantseats.com/assets/bootstrap/js/bootstrap.min.js"></script>
     <script rel="script" src="https://www.iwantseats.com/assets/js/moment.min.js"></script>
     <script rel="script" src="https://www.iwantseats.com/assets/js/axios.min.js"></script>
@@ -530,3 +641,4 @@
     <script async rel="script" src="https://www.iwantseats.com/assets/js/main.js?v=1679063936161"></script>
 </body>
 </html>
+
